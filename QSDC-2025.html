@@ -15,17 +15,17 @@
 
 .container {
   display: flex;
-  Flex-wrap; wrap;
-  gap: 2em; /* optional spacing between columns  */
-}.location-list li {
-  margin-bottom: 1em;
+  flex-wrap: wrap;
+  gap: 0px; /* reduce spacing between columns */
 }
-.column {
-  flex: 1 1 30%; /* allows two columns to sit side by side */
-  min-width: 200px; /* prevents columns  from getting too narrow */
- }
+
 .location-list li {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
+}
+
+.column {
+  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
+  min-width: 100px;
 }
   </style>
 </head>
