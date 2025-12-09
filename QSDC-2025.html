@@ -15,17 +15,17 @@
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0px; /* reduce spacing between columns */
+  Flex-wrap; wrap;
+  gap: 2em; /* optional spacing between columns */
+}.location-list li {
+  margin-bottom: 1em;
 }
-
-.location-list li {
-  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
-}
-
 .column {
-  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
-  min-width: 100px;
+  flex: 1 1 30%; /* allows two columns to sit side by side */
+  min-width: 200px; /* prevents columns from getting too narrow */
+ }
+.location-list li {
+  margin-bottom: 1em;
 }
   </style>
 </head>
@@ -49,9 +49,7 @@
   <section class="hero">
     <h2>Welcome to Our Dance Club</h2>
     <p>Join us on the 1st and 3rd Friday of each Month.(see Schedule)</p>
-    <p>MEMBERS  $10.00 ..... NON-MEMBERS  $15.00</p>
-    <p>Dancing 7–11 pm</p>
-    <p>Doors open at 6:00 pm.</p>
+    <p>MEMBERS  $10.00 .... NON-MEMBERS  $15.00</p>
   </section>
 
   <section id="about">
@@ -68,7 +66,9 @@
 <ul>
   <li style="margin-bottom: 1em;">Belleville Masonic Hall</li>
   <li style="margin-bottom: 1em;">132 Foster Ave. Belleville, Ont.</li>
-  </ul>
+  <li style="margin-bottom: 1em;">Dancing 7–11 pm.</li>
+  <li>Doors open at 6:00 pm.</li>
+</ul>
    </div>
   </section>
 
@@ -93,10 +93,10 @@
     </div>
     <div class="column">
       <h3>July – December</h3>
-      <p>Jul 04th – no  dance</p>
-      <p>Jul 18th – no  dance</p>
-      <p>Aug 01st - no  dance</p>
-      <p>Aug 15th - no  dance</p>
+      <p>Jul 04th – no dance</p>
+      <p>Jul 18th – no dance</p>
+      <p>Aug 01st - no dance</p>
+      <p>Aug 15th - no dance</p>
       <p>Sep 05th - White Brothers</p>
       <p>Sep 19th - Land O'Lakes Cruisers</P>
       <p>Oct 03rd - Top Shelf</p>
@@ -114,7 +114,7 @@
     <h2>Gallery</h2>
     <div class="gallery">
       <!-- Add image tags here -->
-      <img src="dance1.jpg" alt="Dance photo 1">
+      <img src="https://qsdc-2025.github.io/images/dancing.JPG" alt="Dance photo 1">
       <img src="dance2.jpg" alt="Dance photo 2">
     </div>
   </section>
