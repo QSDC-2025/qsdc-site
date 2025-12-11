@@ -8,4 +8,4 @@ Disallow: /private/
 Disallow: /cgi-bin/
 
 # Point to your sitemap for better indexing
-Sitemap: https://quintesocialdanceclub.ca/sitemap.xml
+Sitemap: https://quintesocialdance.ca/sitemap.xml
