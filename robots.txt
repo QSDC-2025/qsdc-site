@@ -1,4 +1,11 @@
+# Allow all crawlers full access to public content
 User-agent: *
-Allow: /
+Disallow:
 
-Sitemap: https://www.quintesocialdance.ca/sitemap.xml
+# Block sensitive or admin areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+# Point to your sitemap for better indexing
+Sitemap: https://quintesocialdanceclub.ca/sitemap.xml
