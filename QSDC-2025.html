@@ -15,17 +15,17 @@
 
 .container {
   display: flex;
-  Flex-wrap; wrap;
-  gap: 2em; /* optional spacing between columns */
-}.location-list li {
-  margin-bottom: 1em;
+  flex-wrap: wrap;
+  gap: 0px; /* reduce spacing between columns */
 }
-.column {
-  flex: 1 1 30%; /* allows two columns to sit side by side */
-  min-width: 200px; /* prevents columns from getting too narrow */
- }
+
 .location-list li {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
+}
+
+.column {
+  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
+  min-width: 100px;
 }
   </style>
 </head>
@@ -40,7 +40,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#Location">Location</a>
-      <a href="#events">Events</a>
+      <a href="#events">Schedule</a>
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -49,68 +49,69 @@
   <section class="hero">
     <h2>Welcome to Our Dance Club</h2>
     <p>Join us on the 1st and 3rd Friday of each Month.(see Schedule)</p>
-    <p>MEMBERS  $10.00 .... NON-MEMBERS  $15.00</p>
+    <p>MEMBERS  $10.00 ..... NON-MEMBERS  $15.00</p>
+    <p>Dancing 7–11 pm</p>
+    <p>Doors open at 6:00 pm.</p>
   </section>
 
   <section id="about">
-    <div style="font-size: 18px;">
+    <div style="font-size: 20px;">
      <h2>About Us</h2>
-    	<p>We're a non-profit community of dance lovers based in the Quinte Region, where the joy of movement and music brings people together. Most of our members are seniors, but dancers of all ages and experience levels are always welcome, We host regular social dances featuring Live bands - with a toe-tapping mix that leans toward country but spans a wide range of musical styles. Whether you're a seasoned dancer or just looking to try something new, come join us on the dance floor!</p>
+    	<p>We're a non-profit community of dance lovers based in the Quinte Region, where the joy of movement and music brings people together. Most of our members are seniors, but dancers of all ages and experience levels are always welcome. We host regular social dances featuring Live bands - with a toe-tapping mix that leans toward country but spans a wide range of musical styles. Whether you're a seasoned dancer or just looking to try something new, come join us on the dance floor!</p>
     </div>
   </section>
 
 
   <section id="Location">
-   <div style="font-size: 18px;">
+   <div style="font-size: 20px;">
    <h2>Location</h2>
 <ul>
   <li style="margin-bottom: 1em;">Belleville Masonic Hall</li>
   <li style="margin-bottom: 1em;">132 Foster Ave. Belleville, Ont.</li>
-  <li style="margin-bottom: 1em;">Dancing 7–11 pm.</li>
-  <li>Doors open at 6:00 pm.</li>
-</ul>
+  </ul>
    </div>
   </section>
 
   
 <section id="events">
-  <h2>Dance Schedule 2025</h2>
+  <h2>Dance Schedule 2026</h2>
+  <div style="font-size: 20px;">
   <div class="container">
     <div class="column">
-      <h3>January – June</h3>
-      <p>Jan 3rd – Top Shelf</p>
-      <p>Jan 17th – White Brothers</p>
-      <p>Feb 7th – Heartland Country</p>
-      <p>Feb 21st – Land O'Lakes Cruisers</p>
-      <p>Mar 7th – Hallman and Hoffman</p>
-      <p>Mar 21st – Top Shelf</p>
-      <p>Apr 4th – White Brothers</p>
-      <p>Apr 25th – Heartland Country</p>
-      <p>May 2nd – Land O'Lakes Cruisers</p>
-      <p>May 16th – Top Shelf</p>
-      <p>Jun 04th – White Brothers</p>
-      <p>Jun 20th – Heartland Country</p>
+      <h3>January – July</h3>
+      <p>Jan 16th – HEARTLAND COUNTRY</p>
+      <p>Feb 06th – VINTAGE VIBES</p>
+      <p>Feb 20th – GRACE TIMMERMAN</p>
+      <p>Mar 06th – TOP SHELF</p>
+      <p>Mar 20th – HALLMAN AND HOFFMAN</p>
+      <p>Apr 17th – WHITE BROTHERS</p>
+      <p>May 01st – VINTAGE VIBES</p>
+      <p>May 15th – LAND O'LAKES CRUISERS</p>
+      <p>Jun 05th – HEARTLAND COUNTRY</p>
+      <p>Jun 19th – TOP SHELF</p>
+      <p>Jul 04th – no  dance</p>
+
+
     </div>
     <div class="column">
       <h3>July – December</h3>
-      <p>Jul 04th – no dance</p>
-      <p>Jul 18th – no dance</p>
-      <p>Aug 01st - no dance</p>
-      <p>Aug 15th - no dance</p>
-      <p>Sep 05th - White Brothers</p>
-      <p>Sep 19th - Land O'Lakes Cruisers</P>
-      <p>Oct 03rd - Top Shelf</p>
-      <p>Oct 17th - Hallman and Hoffman</p>
-      <p>Nov 07th - Vintage Vibes</p>
-      <p>Nov 21st - Heartland Country</p>
-      <p>Dec 05th - Land O'Lakes Cruisers</p>
-      <p>Dec 19th - White Brothers</p>
+      <p>Jul 18th – no  dance</p>
+      <p>Aug 01st - no  dance</p>
+      <p>Aug 15th - no  dance</p>
+      <p>Sep 04th - White Brothers</p>
+      <p>Sep 18th - VINTAGE VIBES</P>
+      <p>Oct 02nd - HALLMAN AND HOFFMANT</p>
+      <p>Oct 16th - LAND O'LAKES CRUISERS</p>
+      <p>Nov 06th - HEARTLAND COUNTRY</p>
+      <p>Nov 20th - WHITE BROTHERS</p>
+      <p>Dec 04th - HALLMAN AND HOFFMAN</p>
+      <p>Dec 18th - TOP SHELF</p>
       <!-- Add more dates here -->
      </div>
    </div>
 </section>
-    
-  <section id="gallery">
+
+ <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
       <!-- Add image tags here -->
@@ -125,11 +126,12 @@
     <h2>Contact Us</h2>
     <p>Sharon Hatch - Vice President</p>
     <p> Phone No. 613-779-6060</p>
-    
+  
   </section>
 
+
   <footer>
-    <p>&copy; 2025 Dance Club</p>
+    <p>&copy; 2026 Dance Club</p>
   </footer>
 
 </body>
