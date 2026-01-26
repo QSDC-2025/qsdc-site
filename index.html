@@ -11,7 +11,8 @@
 
   <title>Quinte Social Dance Club | Social dancing in Belleville | QSDC</title>
   <meta name="description" content="Discover Belleville’s friendliest social dance community. The Quinte Social Dance Club offers monthly dances, great music, and a welcoming space for adults of all skill levels.">
-   
+  <!-- move style to here -->
+ 
  <!-- Open Graph tags -->
 
   <meta property="og:title" content="Quinte Social Dance Club – Dancing in belleville">
@@ -31,6 +32,7 @@
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
+  
 {
   "@context": "https://schema.org",
   "@type": "EventSeries",
@@ -63,33 +65,66 @@
   },
   "image": "https://quintesocialdance.ca/images/qsdc-logo.png"
 }
-</script>
-   
+</script> 
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
+    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; }
+    section { padding: 2em; }
+    .hero { background: #eee; text-align: center; padding: 3em 1em; }
+    .gallery img { width: 100px; margin: 5px; }
+    form input, form textarea { display: block; margin: 10px 0; width: 100%; max-width: 400px; }
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px; /* reduce spacing between columns */
+}
+
+.location-list li {
+  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
+}
+
+.column {
+  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
+  min-width: 100px;
+}
+  </style>
+  
 </head>
 
+
 <body>
+<nav style="background-color:#eee; padding:10px;">
+ </nav>
+
   <header>
-    <h1>Quinte Social Dance Club - Social Dancing in Belleville</h1>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="QSDC-2025.html">About the Club</a></li>
-        <li><a href="schedule.html">Schedule</a></li>
-        <li><a href="Gallery.html">Photos</a></li>
-        <li><a href="Contacts.html">Contacts</a></li>
-      </ul>
+    <h1>Quinte Social Dance Club</h1>
+    <nav>
+      <a href="location.html">Location</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contacts.html">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome!</h2>
-      <p>We’re a friendly group of dancers in Belleville, Ontario. Whether you're a beginner or experienced, Single or a Couple, come join the fun!</p>
-    </section>
-  </main>
+  <section class="hero">
+    <h2>Welcome to Our Dance Club</h2>
+    <p>Join us on the 1st and 3rd Friday of each Month.(see Schedule)</p>
+    <p>MEMBERS  $10.00 ..... NON-MEMBERS  $15.00</p>
+    <p>Dancing 7–11 pm</p>
+    <p>Doors open at 6:00 pm.</p>
+  </section>
+
+  <section id="about">
+    <div style="font-size: 18px;">
+     <h2>About Us</h2>
+    	<p>We're a non-profit community of dance lovers based in the Quinte Region, where the joy of movement and music brings people together. Most of our members are seniors, but dancers of all ages and experience levels are always welcome. We host regular social dances featuring Live bands - with a toe-tapping mix that leans toward country but spans a wide range of musical styles. Whether you're a seasoned dancer or just looking to try something new, come join us on the dance floor!</p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2026 Quinte Social Dance Club. All rights reserved.</p>
+    <p>&copy; 2026 Quinte Social Dance Club</p>
   </footer>
+
 </body>
 </html>
