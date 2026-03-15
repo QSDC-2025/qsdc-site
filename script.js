@@ -6,6 +6,7 @@ const nextDance = getNextDance(danceSchedule);
 console.log("Next dance:", nextDance);
 
 document.getElementById("next-dance").innerHTML = `
-    <strong>Next Dance:</strong> ${nextDance.theme}<br>
-    <strong>Date:</strong> ${nextDance.date}
+    <strong>${nextDance.theme}</strong><br>
+    <span style="font-size: 1.1em;">${nextDance.date}</span>
 `;
+
