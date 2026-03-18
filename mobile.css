@@ -1,0 +1,117 @@
+/* ============================================
+   1. GLOBAL MOBILE IMPROVEMENTS
+   ============================================ */
+html {
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+/* Prevent horizontal scrolling on small screens */
+body, html {
+  overflow-x: hidden;
+}
+
+/* ============================================
+   2. NAVIGATION IMPROVEMENTS
+   ============================================ */
+nav a {
+  padding: 0.75rem 1rem;       /* Larger tap targets */
+  display: inline-block;
+}
+
+/* Stack nav on small screens */
+@media (max-width: 500px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+}
+
+/* ============================================
+   3. NEXT DANCE BOX RESPONSIVENESS
+   ============================================ */
+.next-dance-box {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .next-dance-box {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+/* ============================================
+   4. EVENT SCHEDULE RESPONSIVENESS
+   ============================================ */
+.schedule-container {
+  width: 100%;
+  overflow-x: auto;   /* Safety net for small screens */
+}
+
+.schedule-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.schedule-container td,
+.schedule-container th {
+  padding: 0.6rem;
+}
+
+/* ============================================
+   5. RESPONSIVE IMAGES
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: add soft rounded corners */
+img {
+  border-radius: 4px;
+}
+
+/* ============================================
+   6. TYPOGRAPHY & READABILITY
+   ============================================ */
+p, li {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.3;
+  margin-top: 1.5rem;
+}
+
+/* ============================================
+   7. FOOTER & LINK TAP TARGETS
+   ============================================ */
+footer a {
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+/* ============================================
+   8. SPACING BETWEEN SECTIONS
+   ============================================ */
+section {
+  margin-bottom: 2rem;
+}
+
