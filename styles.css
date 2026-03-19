@@ -1,0 +1,172 @@
+/* Layout wrapper */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* Header */
+.site-header {
+  text-align: center;
+  padding: 1.5em 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-nav {
+  margin-top: 1em;
+}
+
+.main-nav a {
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+}
+
+.main-nav a:hover {
+  color: #8a5a2e;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.hero p {
+  margin: 0.4em 0;
+  font-size: 1.1em;
+}
+
+/* About section */
+.about {
+  font-size: 18px;
+  margin: 2em 0;
+}
+
+/* Next Dance Box */
+.next-dance-box {
+  padding: 1.8em;
+  background: #fff8e8;
+  border-radius: 12px;
+  border: 1px solid #f0d9a6;
+  margin: 2em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.next-dance-box h2 {
+  margin-top: 0;
+  color: #8a5a2e;
+}
+
+.next-dance-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #5a3c1a;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.5em 0;
+  background: #f7f7f7;
+  border-top: 1px solid #ddd;
+  margin-top: 3em;
+}
+
+/* Highlight active nav link */
+.main-nav a.active {
+  color: #8a5a2e;
+  text-decoration: underline;
+}
+
+/* Schedule list */
+.schedule-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+.schedule-list li {
+  padding: 0.4em 0;
+  font-size: 1.1em;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.schedule-list li:last-child {
+  border-bottom: none;
+}
+
+/* Back link */
+.back-link {
+  font-size: 1.1em;
+  text-decoration: none;
+  color: #8a5a2e;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Location page */
+.location-section {
+  margin: 2em 0;
+  font-size: 1.2em;
+}
+
+.location-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location-name {
+  font-weight: 600;
+  margin-bottom: 0.8em;
+  font-size: 1.3em;
+}
+
+.location-address {
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+
+.map-link {
+  font-size: 1.1em;
+  color: #8a5a2e;
+  text-decoration: underline;
+}
+
+.map-link:hover {
+  color: #5a3c1a;
+}
+
+/* Gallery page */
+.gallery-section {
+  margin: 2em 0;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.gallery-grid figure {
+  width: 250px;
+  text-align: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.gallery-grid figcaption {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+}
