@@ -2,69 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description"content="Quinte Social Dance Club operates out of the Masonic Hall in Belleville on the 1st and 3rd Friday of each month.">
-<!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Quinte Social Dance Club operates out of the Masonic Hall in Belleville on the 1st and 3rd Friday of each month.">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="1024x1024" href="/images/qsdc-favicon.png">
 
-  <title>Describes the Location for Quinte Social Dance Club | QSDC</title>
-    <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 2em; }
-    .hero { background: #eee; text-align: center; padding:  1em; }
-    .gallery img { width: 100px; margin: 5px; }
-    form input, form textarea { display: block; margin: 10px 0; width: 100%; max-width: 400px
- }
+  <title>Location | Quinte Social Dance Club</title>
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px; /* reduce spacing between columns */
-}
-
-.location-list li {
-  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
-}
-
-.column {
-  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
-  min-width: 100px;
-}
-  body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    h1 { text-align: left; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<section class="hero">
-<div style="font-size: 15px;">
-<h1>Quinte Social Dance Club - Location Details</h1>
-</section>
-<p>Here is the location of our Dances.</p>
-<section id="Location">
-   <div style="font-size: 20px;">
-      <!--<h2>Location</h2> -->
-      <ul>
-         <li style="margin-bottom: 1em;">Belleville Masonic Hall</li>
-         <li style="margin-bottom: 1em;">132 Foster Ave. Belleville, Ont.<br>
-            <a href="https://www.google.com/maps/place/132+Foster+Ave,+Belleville,+ON" 
-               target="_blank" 
-               style="font-size: 18px; text-decoration: underline;">
-               View on Google Maps
-            </a>
-         </li>
+
+  <header class="site-header">
+    <h1>Quinte Social Dance Club</h1>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="location.html" class="active">Location</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contacts.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <h2>Quinte Social Dance Club – Location Details</h2>
+      <p>Here is the location of our dances.</p>
+    </section>
+
+    <section class="location-section">
+      <ul class="location-list">
+        <li class="location-name">Belleville Masonic Hall</li>
+
+        <li class="location-address">
+          132 Foster Ave.<br>
+          Belleville, Ontario
+          <br><br>
+          <a href="https://www.google.com/maps/place/132+Foster+Ave,+Belleville,+ON"
+             target="_blank"
+             class="map-link">
+            View on Google Maps
+          </a>
+        </li>
       </ul>
-   </div>
-</section>
+    </section>
 
+    <p><a href="index.html" class="back-link">← Back to Home</a></p>
 
-<p><a href="index.html">Back to Home</a></p>
+  </main>
 
- <footer>
-    <p>&copy; 2026 Dance Club</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 Quinte Social Dance Club</p>
   </footer>
-
 
 </body>
 </html>

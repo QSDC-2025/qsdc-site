@@ -2,80 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="1024x1024" href="/images/qsdc-favicon.png">
 
   <title>Social Dance Events | Dancing in Belleville hosted by QSDC</title>
-   <meta name="description"content="See upcoming social dances in Belleville with the Quinte    Social Dance Club. Monthly dance events in a relaxed, friendly community.">
+  <meta name="description" content="See upcoming social dances in Belleville with the Quinte Social Dance Club. Monthly dance events in a relaxed, friendly community.">
 
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 2em; }
-    .hero { background: #eee; text-align: left; padding: 1em; }
-    .gallery img { width: 100px; margin: 5px; }
-    form input, form textarea { display: block; margin: 10px 0; width: 100%; max-width: 400px; }
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px; /* reduce spacing between columns */
-}
-
-.location-list li {
-  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
-}
-
-.column {
-  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
-  min-width: 100px;
-}
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    h1 { text-align: left; }
-  </style>
-
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<section class="hero">
-<div style="font-size: 15px;">
-<h1>Upcoming Social Dance Events in Belleville for 2026</h1>
-</section>
-<div style="font-size: 20px;">
-<p>Join us for our Monthly Social Dances. We play an easygoing mix of popular social dance music — everything from classic hits to modern favourites with steady, dance‑friendly rhythms.</>
-<p> Here is the full schedule for the year.</p>
 
-<ul>
-  <li>Jan 16 – HEARTLAND COUNTRY</li>
-  <li>Feb 06 – LAND O'LAKES CRUISERS</li>
-  <li>Feb 20 – GRACE TIMMERMAN</li>
-  <li>Mar 06 – TOP SHELF</li>
-  <li>Mar 20 – HALLMAN AND HOFFMAN</li>
-  <li>Apr 17 – WHITE BROTHERS</li>
-  <li>May 01 – VINTAGE VIBES</li>
-  <li>May 15 – LAND O'LAKES CRUISERS</li>
-  <li>Jun 05 – HEARTLAND COUNTRY</li>
-  <li>Jun 19 – TOP SHELF</li>
-  <li>Jul 04 – No Dance</li>
-  <li>Jul 18 – No Dance</li>
-  <li>Aug 01 – No Dance</li>
-  <li>Aug 15 – No Dance</li>
-  <li>Sep 04 – White Brothers</li>
-  <li>Sep 18 – VINTAGE VIBES</li>
-  <li>Oct 02 – HALLMAN AND HOFFMAN</li>
-  <li>Oct 16 – LAND O'LAKES CRUISERS</li>
-  <li>Nov 06 – HEARTLAND COUNTRY</li>
-  <li>Nov 20 – WHITE BROTHERS</li>
-  <li>Dec 04 – HALLMAN AND HOFFMAN</li>
-  <li>Dec 18 – TOP SHELF</li>
-</ul>
+  <header class="site-header">
+    <h1>Quinte Social Dance Club</h1>
 
-<p><a href="index.html">Back to Home</a></p>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="location.html">Location</a>
+      <a href="schedule.html" class="active">Schedule</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contacts.html">Contact</a>
+    </nav>
+  </header>
 
- <footer>
-    <p>&copy; 2026 Dance Club</p>
+  <main class="container">
+
+    <section class="hero">
+      <h2>Upcoming Social Dance Events in Belleville for 2026</h2>
+      <p>
+        Join us for our Monthly Social Dances. We play an easygoing mix of popular social dance music — everything from classic hits to modern favourites with steady, dance‑friendly rhythms.
+      </p>
+      <p>Here is the full schedule for the year.</p>
+    </section>
+
+    <section class="schedule-list">
+      <ul>
+        <li>Jan 16 – HEARTLAND COUNTRY</li>
+        <li>Feb 06 – LAND O'LAKES CRUISERS</li>
+        <li>Feb 20 – GRACE TIMMERMAN</li>
+        <li>Mar 06 – TOP SHELF</li>
+        <li>Mar 20 – HALLMAN AND HOFFMAN</li>
+        <li>Apr 17 – WHITE BROTHERS</li>
+        <li>May 01 – VINTAGE VIBES</li>
+        <li>May 15 – LAND O'LAKES CRUISERS</li>
+        <li>Jun 05 – HEARTLAND COUNTRY</li>
+        <li>Jun 19 – TOP SHELF</li>
+        <li>Jul 04 – No Dance</li>
+        <li>Jul 18 – No Dance</li>
+        <li>Aug 01 – No Dance</li>
+        <li>Aug 15 – No Dance</li>
+        <li>Sep 04 – WHITE BROTHERS</li>
+        <li>Sep 18 – VINTAGE VIBES</li>
+        <li>Oct 02 – HALLMAN AND HOFFMAN</li>
+        <li>Oct 16 – LAND O'LAKES CRUISERS</li>
+        <li>Nov 06 – HEARTLAND COUNTRY</li>
+        <li>Nov 20 – WHITE BROTHERS</li>
+        <li>Dec 04 – HALLMAN AND HOFFMAN</li>
+        <li>Dec 18 – TOP SHELF</li>
+      </ul>
+    </section>
+
+    <p><a href="index.html" class="back-link">← Back to Home</a></p>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Quinte Social Dance Club</p>
   </footer>
 
 </body>

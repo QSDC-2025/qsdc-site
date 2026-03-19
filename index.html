@@ -82,14 +82,13 @@
     .column { flex: 0 0 30%; min-width: 100px; }
   </style>
 </head>
-
+start of paste
 <body>
-<nav style="background-color:#eee; padding:10px;">
- </nav>
 
-  <header>
+  <header class="site-header">
     <h1>Quinte Social Dance Club</h1>
-    <nav>
+
+    <nav class="main-nav" aria-label="Main navigation">
       <a href="location.html">Location</a>
       <a href="schedule.html">Schedule</a>
       <a href="Gallery.html">Gallery</a>
@@ -97,36 +96,33 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <h2>Welcome to Our Dance Club</h2>
-    <p>Join us on the 1st and 3rd Friday of each Month.(see Schedule)</p>
-    <p>MEMBERS  $10.00 ..... NON-MEMBERS  $15.00</p>
-    <p>Dancing 7–11 pm</p>
-    <p>Doors open at 6:00 pm.</p>
-  </section>
+  <main class="container">
 
-  <section id="about">
-    <div style="font-size: 18px;">
-     <h2>About Us</h2>
-    	<p>We're a non-profit community of dance lovers based in the Quinte Region, where the joy of movement and music brings people together. Most of our members are seniors, but dancers of all ages and experience levels are always welcome. We host regular social dances featuring Live bands - with a toe-tapping mix that leans toward country but spans a wide range of musical styles. Whether you're a seasoned dancer or just looking to try something new, come join us on the dance floor!</p>
-    </div>
-  </section>
+    <section class="hero">
+      <h2>Welcome to Our Dance Club</h2>
+      <p>Join us on the 1st and 3rd Friday of each Month. (see Schedule)</p>
+      <p>MEMBERS $10.00 — NON-MEMBERS $15.00</p>
+      <p>Dancing 7–11 pm</p>
+      <p>Doors open at 6:00 pm.</p>
+    </section>
 
-<section id="next-dance-section" style="
-    padding: 1.8em;
-    background: #fff8e8;
-    border-radius: 12px;
-    border: 1px solid #f0d9a6;
-    margin: 2em 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-">
-  <h2 style="margin-top: 0; color:#8a5a2e;">Next Dance</h2>
-  <div id="next-dance" style="font-size: 20px; font-weight: 500; color:#5a3c1a;"></div>
-</section>
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>
+        We're a non-profit community of dance lovers based in the Quinte Region, where the joy of movement and music brings people together. Most of our members are seniors, but dancers of all ages and experience levels are always welcome. We host regular social dances featuring live bands — with a toe-tapping mix that leans toward country but spans a wide range of musical styles. Whether you're a seasoned dancer or just looking to try something new, come join us on the dance floor!
+      </p>
+    </section>
 
-    <script type="module" src="script.js"></script>
+    <section id="next-dance-section" class="next-dance-box">
+      <h2>Next Dance</h2>
+      <div id="next-dance" class="next-dance-text"></div>
+    </section>
 
-  <footer>
+  </main>
+
+  <script type="module" src="script.js"></script>
+
+  <footer class="site-footer">
     <p>&copy; 2026 Quinte Social Dance Club</p>
   </footer>
 

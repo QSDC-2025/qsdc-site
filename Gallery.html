@@ -2,106 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="See upcoming Photo's taken at social dances in Belleville with the Quinte Social Dance Club."> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Favicon -->
+  <meta name="description" content="See photos taken at social dances in Belleville with the Quinte Social Dance Club.">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="1024x1024" href="/images/qsdc-favicon.png">
 
-  <title>Gallery of Pictures | QSDC</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header, footer { background: #333; color: white; text-align: center; padding: 1em; }
-    nav a { margin: 0 15px; color: white; text-decoration: none; }
-    section { padding: 2em; }
-    .hero { background: #eee; text-align: center; padding: 1em; }
-    .gallery img { width: 100px; margin: 5px; }
-    form input, form textarea { display: block; margin: 10px 0; width: 100%; max-width: 400px; }
+  <title>Gallery | Quinte Social Dance Club</title>
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px; /* reduce spacing between columns */
-}
-
-.location-list li {
-  margin-bottom: 0.5em; /* optional: tighten vertical spacing */
-}
-
-.column {
-  flex: 0 0 30%; /* each column ~45% width, leaving ~10% for gap */
-  min-width: 100px;
-}
-  
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
-    h1 { text-align: left; }
-
-.gallery {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-figure {
-  text-align: center;
-  width: 250px; /* adjust as needed */
-}
-
-figure img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-figcaption {
-  margin-top: 8px;
-  font-weight: bold;
-  font-size: 1rem;
-}
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<section class="hero">
-<div style="font-size: 15px;">
-<h1>Photo's from the Quinte Social Dances in Belleville</h1>
-</div>
-</section>
+  <header class="site-header">
+    <h1>Quinte Social Dance Club</h1>
 
-<section id="gallery">
-  <h2>Gallery</h2>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="location.html">Location</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="Gallery.html" class="active">Gallery</a>
+      <a href="Contacts.html">Contact</a>
+    </nav>
+  </header>
 
-  <div class="gallery">
+  <main class="container">
 
-    <figure>
-      <a href="https://qsdc-2025.github.io/qsdc-site/images/dancing.JPG">
-        <img src="https://qsdc-2025.github.io/qsdc-site/images/dancing.JPG" alt="Dancing at QSDC">
-      </a>
-      <figcaption>Dancing at QSDC</figcaption>
-    </figure>
+    <section class="hero">
+      <h2>Photos from the Quinte Social Dances</h2>
+      <p>A look at some of the fun moments from our dances in Belleville.</p>
+    </section>
 
-    <figure>
-      <a href="https://qsdc-2025.github.io/qsdc-site/images/land-olakes-cruisers.jpg">
-    <img src="https://qsdc-2025.github.io/qsdc-site/images/land-olakes-cruisers.jpg" alt="Land O'Lakes Cruisers">
-  </a>
-      <figcaption>Land O'Lakes Cruisers</figcaption>
-    </figure>
+    <section class="gallery-section">
+      <h2>Gallery</h2>
 
-    <figure>
-      <a href="https://qsdc-2025.github.io/qsdc-site/images/Hallman-and-Hoffman.JPG">
-    <img src="https://qsdc-2025.github.io/qsdc-site/images/Hallman-and-Hoffman.JPG" alt="Hallman and hoffman">
-  </a>
-      <figcaption>Hallman and Hoffman</figcaption>
-    </figure>
+      <div class="gallery-grid">
 
-  </div>
-</section>
+        <figure>
+          <a href="https://qsdc-2025.github.io/qsdc-site/images/dancing.JPG" target="_blank">
+            <img src="https://qsdc-2025.github.io/qsdc-site/images/dancing.JPG" alt="Dancing at QSDC">
+          </a>
+          <figcaption>Dancing at QSDC</figcaption>
+        </figure>
 
- <p><a href="index.html">Back to Home</a></p>
+        <figure>
+          <a href="https://qsdc-2025.github.io/qsdc-site/images/land-olakes-cruisers.jpg" target="_blank">
+            <img src="https://qsdc-2025.github.io/qsdc-site/images/land-olakes-cruisers.jpg" alt="Land O'Lakes Cruisers performing">
+          </a>
+          <figcaption>Land O'Lakes Cruisers</figcaption>
+        </figure>
 
- <footer>
+        <figure>
+          <a href="https://qsdc-2025.github.io/qsdc-site/images/Hallman-and-Hoffman.JPG" target="_blank">
+            <img src="https://qsdc-2025.github.io/qsdc-site/images/Hallman-and-Hoffman.JPG" alt="Hallman and Hoffman performing">
+          </a>
+          <figcaption>Hallman and Hoffman</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <p><a href="index.html" class="back-link">← Back to Home</a></p>
+
+  </main>
+
+  <footer class="site-footer">
     <p>&copy; 2026 Quinte Social Dance Club</p>
   </footer>
-
 
 </body>
 </html>
