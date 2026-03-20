@@ -1,13 +1,22 @@
-export function getNextDance(schedule) {
+export function getNextDance(danceSchedule) {
     const today = new Date();
 
-    const upcoming = schedule
-        .map(item => ({
-            ...item,
-            dateObj: new Date(item.date + "T00:00:00")
-        }))
-        .filter(item => item.dateObj >= today)
-        .sort((a, b) => a.dateObj - b.dateObj);
+    // Loop through the schedule IN ORDER
+    for (const entry of danceSchedule) {
+        const danceDate = new Date(entry.date + "T00:00:00");
 
-    return upcoming[0] || null;
+        // Pick the FIRST future dance
+        if (danceDate >= today) {
+            return {
+                date: entry.date,
+                theme: entry.theme
+            };
+        }
+    }
+
+    // If nothing is found
+    return {
+        date: null,
+        theme: "No upcoming dances"
+    };
 }
