@@ -1,7 +1,7 @@
 export const danceSchedule = [
     { date: "2025-01-16", theme: "HEARTLAND COUNTRY" },
     { date: "2026-02-06", theme: "Land O'Lakes Cruisers" },
-    { date: "2025-02-20", theme: "Grace Timmerman" },
+    { date: "2026-02-20", theme: "Grace Timmerman" },
     { date: "2026-03-06", theme: "TOP SHELF" },
     { date: "2026-03-20", theme: "HALLMAN AND HOFFMAN" },
     { date: "2026-04-17", theme: "WHITE BROTHERS" },
