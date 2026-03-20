@@ -1,6 +1,6 @@
 // 1. Imports
-import { danceSchedule } from "./danceSchedule.js";
-import { getNextDance } from "./getNextDance.js";
+import { danceSchedule } from "./danceSchedule.js?v=2";
+import { getNextDance } from "./getNextDance.js?v=2";
 
 // 2. Helper function (put it here)
 function formatDate(dateString) {
