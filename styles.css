@@ -5,6 +5,12 @@
   padding: 0 1em;
 }
 
+main.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 /* Header */
 .site-header {
   text-align: center;
