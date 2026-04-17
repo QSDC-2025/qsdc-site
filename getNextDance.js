@@ -1,11 +1,13 @@
 export function getNextDance(danceSchedule) {
-    const today = new Date();
+    // Normalize today's date to midnight
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-    // Loop through the schedule IN ORDER
     for (const entry of danceSchedule) {
-        const danceDate = new Date(entry.date + "T00:00:00");
+        // Normalize dance date to midnight
+        const d = new Date(entry.date);
+        const danceDate = new Date(d.getFullYear(), d.getMonth(), d.getDate());
 
-        // Pick the FIRST future dance
         if (danceDate >= today) {
             return {
                 date: entry.date,
@@ -14,7 +16,6 @@ export function getNextDance(danceSchedule) {
         }
     }
 
-    // If nothing is found
     return {
         date: null,
         theme: "No upcoming dances"
