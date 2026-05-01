@@ -1,19 +1,20 @@
 export function getNextDance(danceSchedule) {
-    // Normalize today's date to midnight
+    // Normalize today's date to midnight (local time)
     const now = new Date();
     const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 
-    // Loop through the schedule IN ORDER
     for (const entry of danceSchedule) {
-        const d = new Date(entry.date);
-        const danceDate = new Date(d.getFullYear(), d.getMonth(), d.getDate());
- // ADD THIS BLOCK
+        // Parse YYYY-MM-DD safely with NO timezone shift
+        const [year, month, day] = entry.date.split("-").map(Number);
+        const danceDate = new Date(year, month - 1, day);
+
+        // Debug output
         console.log("CHECKING ENTRY:", {
             entryDateRaw: entry.date,
-            parsedDate: d,
-            normalizedDanceDate: danceDate,
+            danceDate,
             today
         });
+
         if (danceDate >= today) {
             return {
                 date: entry.date,
