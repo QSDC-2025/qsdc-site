@@ -21,6 +21,13 @@ function formatDate(dateString) {
 // 3. Get next dance
 const nextDance = getNextDance(danceSchedule);
 
+console.log({
+  entryDateRaw: entry.date,
+  d,
+  danceDate,
+  today
+});
+
 // 4. Display it
 document.getElementById("next-dance").innerHTML = `
     <div style="font-size:22px; font-weight:bold; margin-bottom:6px;">
