@@ -7,7 +7,7 @@ export const danceSchedule = [
     { date: "2026-04-17", theme: "WHITE BROTHERS" },
     { date: "2026-05-01", theme: "DENNIS WHITTY" },
     { date: "2026-05-15", theme: "LAND O'LAKES CRUISERS" },
-    { date: "2026-06-03", theme: "HEARTLAND COUNTRY" },
+    { date: "2026-06-05", theme: "HEARTLAND COUNTRY" },
     { date: "2026-06-19", theme: "DOUBLE TAKE" },
     { date: "2026-09-04", theme: "WHITE BROTHERS" },
     { date: "2026-09-18", theme: "HOWARD LOPEZ Music Group" },
